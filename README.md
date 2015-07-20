@@ -3,6 +3,9 @@
 Mumble supports querying server information by sending a ping
 packet to the target server. This includes: server version,
 currently connected users, max users allowed, allowed bandwidth.
+This implementation doesn't require anything on the server side,
+and will work on any server.
+
 Read more about it [here](http://wiki.mumble.info/wiki/Protocol#UDP_Ping_packet).
 
 ### How do use it
