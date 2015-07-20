@@ -8,7 +8,7 @@ and will work on any server.
 
 Read more about it [here](http://wiki.mumble.info/wiki/Protocol#UDP_Ping_packet).
 
-### How do use it
+### How to use it
 
 ```php
 <?php
