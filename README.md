@@ -20,7 +20,14 @@ require __DIR__ . '/MumblePing.php';
 
 $Info = MumblePing( 'example.com', 64738 );
 
-echo 'Users: ' . $Info[ 'Users' ] . ' / ' . $Info[ 'MaxUsers' ] . '<br>';
-echo 'Version: ' . $Info[ 'Version' ] . '<br>';
-echo 'Bandwidth: ' . $Info[ 'Bandwidth' ] . ' (bytes)<br>';
+if( $Info === false )
+{
+	echo 'Ping failed.';
+}
+else
+{
+	echo 'Users: ' . $Info[ 'Users' ] . ' / ' . $Info[ 'MaxUsers' ] . '<br>';
+	echo 'Version: ' . $Info[ 'Version' ] . '<br>';
+	echo 'Bandwidth: ' . $Info[ 'Bandwidth' ] . ' (bytes)<br>';
+}
 ```
