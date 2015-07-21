@@ -44,7 +44,7 @@ function MumblePing( $Address, $Port = 64738, $Timeout = 3 )
 	// 4 bytes = allowed bandwidth (in bytes)
 	$Data = fread( $Socket, 24 );
 	
-	if( $Data === false )
+	if( $Data === false || strlen( $Data ) < 24 )
 	{
 		return false;
 	}
